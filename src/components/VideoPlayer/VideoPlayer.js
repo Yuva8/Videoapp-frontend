@@ -20,7 +20,7 @@ class VideoPlayer extends React.Component {
 
   componentDidMount() {
     
-    axios.get('/api/videolist', {
+    axios.get('https://videoappyuvi.herokuapp.com/api/videolist', {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + JSON.parse(localStorage.getItem('userTokenTime')).token
