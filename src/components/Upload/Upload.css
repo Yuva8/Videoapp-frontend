@@ -1,0 +1,55 @@
+.files input {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    padding: 120px 0px 85px 35%;
+    text-align: center !important;
+    margin: 0;
+    width: 100% !important;
+  }
+  
+  .files input:focus {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear; 
+    border:1px solid #92b0b3;
+  }
+  
+  .files {
+    position:relative
+  }
+  
+  .files::after {  
+    pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50px;
+    right: 0;
+    height: 56px;
+    content: "";
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAXVBMVEX///8eIB3Ozs1rbGqjpKOVlpU5OzipqairrKshIyCvr66mp6UpKijl5uX4+Pi9vb1ISkhPUE7HyMdeX11BQ0DY2djBwsFWWFY3ODaQkY8xMzCen57s7OyCg4GJiogBjqc5AAAB10lEQVR4nO3bWXOCMBSG4cQqNBAFFLuo7f//ma0ssp2kzUbame/ceKHhfUZlRETG/vns91Hz55Lz8hyvf0j499SHaICCN/MSDbBrAXlswBYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI2ShKWR1tAcdKlo6/aja/jYrUDpCK+71K/q+m5DqBHpC29746ASTXCbSArs/fnABVtxXxbAro+/zkBDgKnUADePTFxgkw2hAhUAOGZZlbXy9QAjz2tQIVIPfZ1wkUAM99jYAGeO+rBSQgQF8poABB+ioBAQjUVwiWgGB9etdeAAL2ScEcELRPCWaAwH1CMAVsQ/eXgglg6JMf3UEEY8Aq/blgBFipPxMMgNX6U8ED4Ng3uyx0JOgBtv02/C75xWjdIOgOWSu7fn7hcte/joWVYDZm/fZ60Curm1uzY2daYPj8n5pFNWsXJ0ZrSYHp+y9pl9kBCIHx+98NsBCY73+OgJnAYv93BUwEyi/wIQEjgU3fA+AhsOr7AHQCu74XAMsk59Ly+McLgN2y7Ga51A/AYQAAAAAAAAAAAAAA+GMA+bT6yAkg3gDQnaKJNnV/ri/WXBn7ED8/LNSIz/sOedhEm3h/Gh/mCzpRGREUQ8+FAAAAAElFTkSuQmCC');
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .files::before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;  
+    pointer-events: none;
+    width: 100%;
+    right: 0;
+    height: 123px;
+    content: " or drag it here. ";
+    display: block;
+    margin: 0 auto;
+    color: #2ea591;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+  }

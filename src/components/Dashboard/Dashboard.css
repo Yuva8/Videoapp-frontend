@@ -1,0 +1,28 @@
+.video-thumbnail img {
+    width: 100%;
+  }
+  
+  .video-title {
+    
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-weight: bold;
+    color: green;
+  }
+  
+  .username {
+    
+    bottom: 5px;
+    left: 20px;
+    /* background-color: gray; */
+    font-weight: bold;
+    color: green;
+  }
+  
+  .username a {
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+    padding: 2px 8px;
+    font-weight: bold;
+  }
