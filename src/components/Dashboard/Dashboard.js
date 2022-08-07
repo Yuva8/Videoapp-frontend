@@ -28,7 +28,7 @@ class Dashboard extends React.Component {
 
   componentDidMount() {
     if (localStorage.getItem('userTokenTime')) {
-      axios.get('/api/videolist', {
+      axios.get('https://videoappyuvi.herokuapp.com/api/videolist', {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + JSON.parse(localStorage.getItem('userTokenTime')).token
