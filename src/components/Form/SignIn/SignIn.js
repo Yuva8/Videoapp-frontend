@@ -86,7 +86,7 @@ class SignIn extends React.Component {
             required />
         </div>
         <div className="d-flex justify-content-between align-items-end">
-          <button onClick={this.onSubmitHandler} className="btn btn-success btn-md" type="button" style={{marginTop:'10px'}}>Submit</button>
+          <button onClick={this.onSubmitHandler} className="btn btn-success btn-md" type="button" style={{marginTop:'10px'}}>Submit pls click twice</button>
           <Link to="/" className="text-success">Press to Login</Link>
           <Link to="/signUp" className="text-success">Sign Up here</Link>
         </div>
