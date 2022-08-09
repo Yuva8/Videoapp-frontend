@@ -35,7 +35,7 @@ class SignIn extends React.Component {
             }
             localStorage.setItem('userTokenTime', JSON.stringify(data));
             this.setState({
-              navigate: false
+              navigate: true
             });
             console.log(this.state.token);
            }).catch(err => {
