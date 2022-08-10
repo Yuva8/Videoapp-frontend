@@ -83,6 +83,7 @@ class Upload extends React.Component {
           <form method="post" name="videoUpload" action="/api/upload" id="#" encType="multipart/form-data">
             <div className="form-group files">
               <label>Upload Your Videos Here</label>
+              <span style= {{paddingLeft:'550px'}}>Note:Videos can be uploaded in localhost port only</span>
               <input
                 type="file"
                 name="file"
