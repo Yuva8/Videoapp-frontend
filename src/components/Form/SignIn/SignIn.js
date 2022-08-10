@@ -10,7 +10,6 @@ class SignIn extends React.Component {
         this.state = {
           email: '',
           password: '',
-          token: '' ,
           navigate: localStorage.getItem('userTokenTime') ? true : false
         }
     
@@ -30,14 +29,14 @@ class SignIn extends React.Component {
               token: res.data.token
             });
             const data = {
-              token: this.state.token,
+              token: res.data.token,
                time: new Date().getTime()
             }
             localStorage.setItem('userTokenTime', JSON.stringify(data));
             this.setState({
-              navigate: false
+              navigate: true
             });
-            console.log(this.state.token);
+            console.log(res.data.token);
            }).catch(err => {
             console.log(err);
           });
@@ -86,8 +85,7 @@ class SignIn extends React.Component {
             required />
         </div>
         <div className="d-flex justify-content-between align-items-end">
-          <button onClick={this.onSubmitHandler} className="btn btn-success btn-md" type="button" style={{marginTop:'10px'}}>Submit pls click twice</button>
-          <Link to="/" className="text-success">Press to Login</Link>
+          <button onClick={this.onSubmitHandler} className="btn btn-success btn-md" type="button" style={{marginTop:'10px'}}>Submit</button>
           <Link to="/signUp" className="text-success">Sign Up here</Link>
         </div>
       </Form>
